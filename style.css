@@ -1,0 +1,156 @@
+header {
+    background-color:grey;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    color:black;
+    display: flex;
+    align-items: center;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    cursor: pointer;
+    display: none
+}
+
+header a i {color:white; font-size: 20px;}
+
+ol, ul {
+    list-style: none;
+}
+
+a {text-decoration: none;}
+
+body {
+    background-color:white;
+    margin: 0px;
+    font-style: "Roboto";
+}
+
+h3 {
+    color:white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 25px;
+}
+footer {
+    color: white;
+    background-color: black;
+    padding: 18px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+.seccion-1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    background-color: gray;
+    padding: 18px 100px 18px 100px;
+    margin: 50px 10px 50px 10px;
+}
+
+
+
+p {
+    margin: 40px;
+}
+
+.aboutimg {
+    margin: 40px;
+}
+
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+a i.fa-solid.fa-heart.fixed {
+    position: fixed;
+    bottom: 22px;
+    right: 30px;
+}
+
+.seccion-3 {
+    display:flex;
+}
+
+.carta1 {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.card-container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 787px) {
+
+      
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+        padding: 15px;
+    }
+    ul {
+        position:fixed;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+        text-align: center;
+    }
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+    header nav ul li {
+        font-size: 25px;
+        margin: 55px 0px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: white;
+    }
+
+    .seccion-1 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium';
+        display: block;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .seccion-3{
+        display:block;
+    }
+    .carta1 {
+        width: 95%;
+        border-radius: 30px;
+    }
+}
